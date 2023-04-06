@@ -51,21 +51,6 @@ contract nftMint is ERC721, Ownable, ERC721Enumerable, ERC721URIStorage {
         }              
     }
 
-    // function mintNFT(address recipient, string memory tokenURI)
-    //     public onlyOwner
-    //     returns (uint256)
-    // {
-    //     _tokenIds.increment();
-
-    //     uint256 newItemId = _tokenIds.current();
-    //     _mint(recipient, newItemId);
-    //     _setTokenURI(newItemId, tokenURI);
-
-    //     return newItemId;
-    // }
-
-
-
     function _baseURI() internal view virtual override returns (string memory) {
         return baseTokenURI;
     }
